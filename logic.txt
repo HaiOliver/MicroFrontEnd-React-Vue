@@ -1,0 +1,6 @@
+container -> host
+
+remote: product, cart, dashboard
+
+connect => federation plugin -> module
+
