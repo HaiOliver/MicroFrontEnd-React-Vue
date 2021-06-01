@@ -1,12 +1,3 @@
-import faker from 'faker';
+//!!! import function => load asyncronized
 
-let products = '';
-
-for(let i = 0; i< 3; i++){
-      const name = faker.commerce.productName()
-      products +=`<div>${name}</div>`;
-}
-
-console.log(products);
-
-document.querySelector("#dev-products").innerHTML = products ;
+import('./bootstrap')

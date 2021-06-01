@@ -14,7 +14,8 @@ module.exports = {
                   filename:"remoteEntry.js",
                   exposes:{
                         './ProductsIndex':'./src/index.js'
-                  }
+                  },
+                  shared:['faker']
             }),
             // config index.html always take right name of out put js file
             new HtmlWebpackPlugin({

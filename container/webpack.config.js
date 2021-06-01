@@ -7,12 +7,13 @@ module.exports = {
             port: 8080,
       },
       plugins:[
-            // connect with product, cart
-            // !! product expose in port 8081
+            // !!! connect with product, cart
+            // !! product expose in port 8081, cart expose at port 8082
             new ModuleFederationPlugin({
                   name:"container",
                   remotes:{
-                        products: 'products@http://localhost:8081/remoteEntry.js'
+                        products: 'products@http://localhost:8081/remoteEntry.js',
+                        cart:'cart@http://localhost:8082/remoteEntry.js'
                   }
             })
             ,
